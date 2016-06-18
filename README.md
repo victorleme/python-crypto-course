@@ -1,4 +1,4 @@
-A collection of JavaScript utility functions.
+_A collection of JavaScript utility functions._
 
 # Examples
 
