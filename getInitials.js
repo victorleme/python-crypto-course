@@ -1,5 +1,5 @@
-function getInitials(name) {
-  return name.split(' ')
+export default const getInitials = (name) => (
+  name.split(' ')
     .map(word => `${word.charAt(0).toUpperCase()}.`)
-    .join('');
-}
+    .join('')
+);

@@ -1,5 +1,5 @@
-function getURLSlug(words) {
-  return words
+export default const getURLSlug = (words) => (
+  words
     .replace(/\s+/g, '-')
-    .toLowerCase();
-}
+    .toLowerCase()
+);

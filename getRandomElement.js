@@ -1,3 +1,3 @@
-function getRandomElement(arr){
-  return arr[Math.floor(Math.random() * arr.length)];
-}
+export default const getRandomElement = (arr) => (
+  arr[Math.floor(Math.random() * arr.length)]
+);
