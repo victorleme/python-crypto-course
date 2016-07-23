@@ -6,13 +6,15 @@ const months = [
   'may',
   'june',
   'july',
-  'august'
+  'august',
   'september',
   'october',
   'november',
   'december'
 ];
 
-export default const getMonthName = (place) => (
+const getMonthName = (place) => (
   months[place]
 );
+
+export default getMonthName;
