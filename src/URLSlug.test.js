@@ -1,10 +1,10 @@
 import test from 'ava';
-import getURLSlug from './getURLSlug';
+import URLSlug from './URLSlug';
 
 test('URL slugs are created from strings', t => {
-  t.is(getURLSlug('hello world'), 'hello-world');
+  t.is(URLSlug('hello world'), 'hello-world');
 });
 
 test('Uppercase letters are converted to lower case', t => {
-  t.is(getURLSlug('HeLLo WorLD'), 'hello-world');
+  t.is(URLSlug('HeLLo WorLD'), 'hello-world');
 });
