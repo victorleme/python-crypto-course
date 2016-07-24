@@ -1,0 +1,39 @@
+{
+  "name": "utility-functions",
+  "version": "1.0.0",
+  "description": "An example Git repo for some Egghead.io lessons",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava",
+    "test-watch": "npm test -- -w",
+    "clean": "rm -rf lib",
+    "build": "npm run clean && babel src -d lib",
+    "prepublish": "npm test && npm run build"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-2"]
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": ["babel-register"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevordmiller/utility-functions.git"
+  },
+  "keywords": [
+    "egghead"
+  ],
+  "author": "Trevor D. Miller <trevordmiller@icloud.com> (http://www.trevordmiller.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trevordmiller/utility-functions/issues"
+  },
+  "homepage": "https://github.com/trevordmiller/utility-functions#readme",
+  "devDependencies": {
+    "ava": "0.15.2",
+    "babel-cli": "6.11.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-stage-2": "6.11.0"
+  }
+}
