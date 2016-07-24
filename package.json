@@ -8,7 +8,7 @@
     "test-watch": "npm test -- -w",
     "lint": "eslint src --cache --fix",
     "clean": "rm -rf lib",
-    "build": "npm run clean && babel src -d lib",
+    "build": "npm run clean && babel src -d lib --ignore test.js",
     "prepublish": "npm test && npm run build"
   },
   "babel": {
