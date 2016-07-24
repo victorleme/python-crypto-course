@@ -2,7 +2,7 @@ const initials = (name = '') => (
   name
     .split(' ')
     .map(word => `${word.charAt(0).toUpperCase()}.`)
-    .join(' ')
+    .join('')
 );
 
 export default initials;
