@@ -15,6 +15,8 @@ const months = [
 
 const getMonthName = (place) => (
   months[place]
+    ? months[place]
+    : 'There are only 12 months!'
 );
 
 export default getMonthName;
