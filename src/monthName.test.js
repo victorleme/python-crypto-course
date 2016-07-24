@@ -6,6 +6,7 @@ test('Month names match indexes', t => {
 });
 
 test('Fallback message for bad input', t => {
-  t.is(monthName(-1), 'There are only 12 months!');
-  t.is(monthName(-13), 'There are only 12 months!');
+  const FALLBACK_MESSAGE = 'There are only 12 months!';
+  t.is(monthName(-1), FALLBACK_MESSAGE);
+  t.is(monthName(-13), FALLBACK_MESSAGE);
 });
